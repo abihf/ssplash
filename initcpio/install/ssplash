@@ -1,0 +1,15 @@
+#!/bin/bash
+
+build() {
+    add_binary ssplash
+    add_file /etc/splash.png
+    add_runscript
+}
+
+help() {
+    cat <<HELPEOF
+This hook show splash screen
+HELPEOF
+}
+
+# vim: set ft=sh ts=4 sw=4 et:
